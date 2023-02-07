@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+header{
+    height: 100px;
+    background-color: #000;
+    color: aliceblue;
+}
+.header{
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    
+}
+.logoimg img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li{
+    list-style: none;
+    
+}
+.menu ul {
+    display: flex
+}
+.menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.menu li a:hover{
+    border-bottom: 5px solid #DAA520;
+    color: #ccc;
+}
+.menu .active a {
+    border-bottom: 5px solid #DAA520;
+    
+}
+.banner{
+    height: calc(100vh - 100px);
+    background-color:#616060;
+    background-image: url(/assests/images/jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+    
+
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(27, 27, 27, 0.438);
+
+}
+
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h1 .span2{
+    color: #DAA520;
+}
+.banner h1 .span1{
+    margin-left: 40px;
+}
+.banner a {
+    display: block;
+    background-color: #DAA520;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px ;
+    margin-top: 30px;
+    border-radius: 20px;
+}
