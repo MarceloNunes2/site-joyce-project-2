@@ -6,6 +6,7 @@
 body{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 header{
     height: 100px;
@@ -139,4 +140,7 @@ header{
 }
 .banner .poiter:hover{
     background-color: aliceblue;
+}
+.default{
+    background-color: red;
 }
