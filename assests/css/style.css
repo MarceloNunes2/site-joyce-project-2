@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Kalam:wght@300&display=swap');
+
 body{
+
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 13px;
     overflow-x: hidden;
@@ -142,5 +147,135 @@ header{
     background-color: aliceblue;
 }
 .default{
-    background-color: red;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.default .section-title{
+    font-size: 20px;
+   
+}
+.default .section-desc{
+    font-size: 13px;
+    color: #616060;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body{   
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.light{
+
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title 
+.default.light  .section-body
+{
+    color: #000;
+}
+
+.default.dark .section-desc{
+    color: #141414;
+}
+
+.default.dark {
+    background-color: #c846ec65;
+}
+
+.default.dark .section-title
+{
+    color: #030303;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+Areas Especificas
+*/
+
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus--left{
+    flex: 1;
+}
+
+.section-aboutus--left p{
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.section-aboutus--right{
+    width: 520px;
+    text-align: center;
+    
+}
+
+.section-aboutus--right img{
+    width: 250px;
+    box-shadow: 0px 0px 10px #333;
+    clip-path: circle(50% at 50% 50%);
+    transition: clip-path 1s ease-in-out;
+}
+.section-aboutus--right img:hover{
+    clip-path: circle(70% at 50% 50%);
+}
+
+
+
+.section-services{
+    display: flex;
+    
+}
+
+.section-service{
+    flex: 1;
+    text-align: center;
+    border-right: 2px solid #111111;
+    padding: 15px;
+
+}
+.section-service:first-child{
+    border-left: 2px solid #0c0b0b;
+    border-top: 2px solid #0000;
+}
+.section-service h4{
+    
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family:'Kalam', cursive;
+    font-weight: 700;
+}
+.section-service p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
+    font-family:'Kalam', cursive;
+    font-weight: 300;
+
+}
+.section-service img{
+    width: 110px;
+    height: 110px;
 }
