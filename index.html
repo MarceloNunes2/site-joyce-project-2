@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assests/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Projeto-Salão</title>
 </head>
 <body>
@@ -16,11 +17,11 @@
                     <img src="assests/images/logos.jpg" alt="">
                 </div>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <nav>
                     <ul>
-                        <li class="active"><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li class="active"><a href="#menu">Home</a></li>
+                        <li><a href="#section-aboutus">About Us</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Our Projects</a></li>
                         <li><a href="">Our Team</a></li>
@@ -34,7 +35,7 @@
        </div>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="banner">
             <div class="sliders">
                 <div class="slide" style="margin-left:-200vw"> 
                     <div class="slidearea">
@@ -62,11 +63,48 @@
             </div>
         </section>
 
-        <section class="default" >
-            <div class="section-title">Titulo ola</div>
-            <div class="section-desc"> Descricao</div>
+        <section class="default light" >
+            <div class="section-title">Sobre</div>
+            <div class="section-desc"> Quem eu sou.</div>
             <div class="section-body">
-                ...
+                <div class="section-aboutus" id="section-aboutus">
+                    <div class="section-aboutus--left">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolore quibusdam corporis vitae, dolorum repudiandae modi repellat alias cum blanditiis magnam asperiores aperiam nemo tenetur molestiae itaque iure dignissimos. Atque.</p>
+                    </div>
+                    <div class="section-aboutus--right">
+                        <img src="assests/images/Joyce.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="default dark" >
+            <div class="section-title">Serviços</div>
+            <div class="section-desc"> Meus Serviços dispoviveis</div>
+            <div class="section-body">
+                <div class="section-services">
+                    <div class="section-service">
+                        <img src="assests/images/icones/cilius1.png" alt="">
+                        <h4>Cílios</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum similique neque perferendis, esse recusandae deleniti itaque impedit, accusamus quos magni dolorum quam numquam natus illum animi, cum a rem.</p>
+                    </div>
+                    
+                    <div class="section-service">
+                        <img src="assests/images/icones/depilacao.png" alt="">
+                        <h4>Depilação</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum similique neque perferendis, esse recusandae deleniti itaque impedit, accusamus quos magni dolorum quam numquam natus illum animi, cum a rem.</p>
+                    </div>
+                    <div class="section-service">
+                        <img src="assests/images/icones/relogio.png" alt="">
+                        <h4>Hight qualit desgin</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum similique neque perferendis, esse recusandae deleniti itaque impedit, accusamus quos magni dolorum quam numquam natus illum animi, cum a rem.</p>
+                    </div>
+                    <div class="section-service">
+                        <img src="assests/images/icones/balao.png" alt="">
+                        <h4>Hight qualit desgin</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum similique neque perferendis, esse recusandae deleniti itaque impedit, accusamus quos magni dolorum quam numquam natus illum animi, cum a rem.</p>
+                    </div>
+                </div>
             </div>
             
         </section>
@@ -76,3 +114,4 @@
     </footer>
 </body>
 </html>
+
