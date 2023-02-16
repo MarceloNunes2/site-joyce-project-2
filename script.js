@@ -1,5 +1,7 @@
 const slides = document.querySelectorAll('.slide');
 const pointers = document.querySelectorAll('.poiter');
+const slip = document.querySelectorAll('.slip');
+const pointer = document.querySelectorAll('.poiters');
 let currentSlide = 0;
 
 function hideCurrentSlide() {
@@ -31,3 +33,7 @@ pointers.forEach((pointer, index) => {
         slideInterval = setInterval(nextSlide, 5000);
     });
 });
+
+
+
+
