@@ -284,7 +284,8 @@
         </div>
         <div class="section-share--item">
             <div class="section-share--icon facebook">
-                <img src="/assests/images/icones/facebook.png" />
+                <a href="https://www.facebook.com/joyce.santosdecarvalho.3"><img src="/assests/images/icones/facebook.png" /></a>
+                
             </div>
            
         </div>
@@ -302,14 +303,16 @@
         <div class="section-desc">Our Agency Located in Melbourne, Australia</div>
         <div class="section-body">
             <div class="section-contact">
-                <form method="POST">
+                <form action="https://api.staticforms.xyz/submit" method="POST">
                     <div class="section-contact--split">
-                        <input type="text" name="name" placeholder="NAME" />
-                        <input type="text" name="name" placeholder="EMAIL" />
+                        <input type="text" name="name" placeholder="NAME" required />
+                        <input type="text" name="name" placeholder="EMAIL" required/>
                     </div>
-                    <input type="text" name="name" placeholder="SUBJECT" />
+                    <input type="text" name="name" placeholder="SUBJECT" autocomplete="on" required/>
                     <textarea name="message" placeholder="MESSAGE"></textarea>
                     <input type="submit" value="Send Message" class="button" />
+                    <input type="hidden" name="accessKey" value="22a5ab95-6d96-440e-b76c-5daa6df92627">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                 </form>
             </div>
         </div>
