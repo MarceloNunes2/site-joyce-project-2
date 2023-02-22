@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width,minimun-scale =1.0,initial-scale=1.0">
     <link rel="stylesheet" href="assests/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
     <title>Projeto-Salão</title>
 </head>
 <body>
+    <a class="whatsapp-link" href="https://wa.me/5511958798542" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
     <header>
        <div class="header"> 
             <div class="logo">
@@ -17,9 +21,9 @@
                     <img src="assests/images/logos.jpg" alt="">
                 </div>
             </div>
-            <div class="menu" id="menu">
-                <img class="menu-opener" src="assests/images/icones/menu.png" alt="">
-                <nav>
+            <div class="menu" >
+                <img class="menu-opener" src="assests/images/icones/menu.png" alt="" onclick="clickMenu()">
+                <nav id="menu">
                     <ul>
                         <li class="active"><a href="#menu">Home</a></li>
                         <li><a href="#section-aboutus">Sobre</a></li>
